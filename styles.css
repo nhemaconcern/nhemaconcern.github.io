@@ -122,3 +122,39 @@ li {
     font-weight: bold;
     min-width: 150px;
 }
+
+@media (max-width: 600px) {
+
+    /* Make images fit the screen */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Stack the services vertically */
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make the button full-width */
+    .book-btn {
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Make navigation links stack */
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    /* Stop horizontal scrolling */
+    body {
+        overflow-x: hidden;
+    }
+}
