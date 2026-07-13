@@ -1,0 +1,124 @@
+ header{background-color: rgb(224, 116, 224);
+    text-align:center
+   }
+
+.slogan{
+H1{
+    color:rgba(8, 0, 7, 0.936);
+    font-size: 30px;
+    font-weight:bold;
+    text-align:center;
+    border: radius 10px;
+    text-shadow: 0px 0px 20px rgb(8, 7, 0.936)
+}
+     p{
+        color:rgb(79, 3, 79);
+        font-style:italic;
+        font-size: 16px;
+     } 
+}
+ 
+
+ .welcome-section{
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+
+ }
+
+h2{
+    text-align:center;
+}
+body{
+    background-color:lab(75.9% 35.99 -11.95);
+    background-image: horizontal-gradient(to right, #ff00cc, #333399);
+    background-size:cover;
+
+    
+}
+
+
+p{
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    p{color: yellow;
+    }
+}
+
+img{
+    border: 4px solid #4A148C;
+    border-radius: 10px;
+}
+
+.service-box {
+    text-align: center;
+    width: 200px;
+}
+
+/* Style the link as a button */
+.book-btn {
+    display: inline-block;
+    background-color: #9B59B6;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.booking{
+    text-align: center;
+}
+.book-btn:hover {
+    background-color: #7B1FA2;
+    transform: scale(1.05);
+}
+
+li {
+    list-style: none;
+    font-size: 18px;
+    padding: 10px 0;
+    color: #4A148C;
+    font-weight: bold;
+}
+
+/* Center the title */
+h6 {
+    text-align: center;
+    color: #4A148C;
+    font-size: 20px; 
+}
+
+/* Style the container */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Style each reason */
+li {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    background-color: #f9f0ff;
+    border: 2px solid #D8B4E2;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #4A148C;
+    font-weight: bold;
+    min-width: 150px;
+}
