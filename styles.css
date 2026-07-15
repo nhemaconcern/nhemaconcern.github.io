@@ -158,3 +158,11 @@ li {
         overflow-x: hidden;
     }
 }
+
+h7{
+    color:rgba(255, 4, 96, 0.936);
+    font-size: 25px;
+    font-weight:bold;
+    text-align:top left;
+    border: radius 10px;
+}
