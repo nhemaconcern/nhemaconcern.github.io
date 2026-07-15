@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Connie's Beauty Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="booking.html" class="book-btn">Book Now</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Page Content -->
+    <h1>📱 Get in Touch</h1>
+
+    <h2>📸 Social Media</h2>
+    <p>Follow me on Tiktok: <a href="https://www.tiktok.com/@c.etherealx?_r=1&_t=ZS-982rM12jy2H" target="_blank">@c.etherealx</a></p>
+
+    <h2>💬 WhatsApp</h2>
+    <p><a href="https://wa.me/27625576191" target="_blank">Click here to chat on WhatsApp</a></p>
+    <p>📱 0625576191</p>
+
+    <h2>✉️ Email</h2>
+    <p>nokunhema93@gmail.com</p>
+
+    <h2>📍 Location</h2>
+    <p>Based in Hatfield, Pretoria</p>
+
+    <h2>📝 Send Me a Message</h2>
+    <form onsubmit="return validateContact()">
+        <label>Your Name:</label><br>
+        <input type="text" id="contactName" placeholder="Your name" required><br><br>
+
+        <label>Your Email:</label><br>
+        <input type="email" id="contactEmail" placeholder="Your email" required><br><br>
+
+        <label>Message:</label><br>
+        <textarea id="contactMessage" placeholder="Write your message here..." required></textarea><br><br>
+
+        <button type="submit" class="book-btn">Send Message</button>
+    </form>
+
+    <script>
+        function validateContact() {
+            let name = document.getElementById("contactName").value;
+            let email = document.getElementById("contactEmail").value;
+            let message = document.getElementById("contactMessage").value;
+
+            if (name === "" || email === "" || message === "") {
+                alert("❌ Please fill in all fields!");
+                return false;
+            } else {
+                alert("✅ Thank you, " + name + "! I'll get back to you soon! 💖");
+                return true;
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Now - Connie's Beauty Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="booking.html" class="book-btn">Book Now</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Page Content -->
+    <h1>📅 Book Your Appointment</h1>
+
+    <p>Fill in your details and I'll confirm your booking within 24 hours! 💖</p>
+
+    <form onsubmit="return validateBooking()">
+        <label>Full Name:</label><br>
+        <input type="text" id="name" placeholder="Your full name" required><br><br>
+
+        <label>Phone Number (WhatsApp):</label><br>
+        <input type="tel" id="phone" placeholder="Your WhatsApp number" required><br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" id="email" placeholder="Your email"><br><br>
+
+        <label>Select Service:</label><br>
+        <select id="service" required>
+            <option value="">-- Select a service --</option>
+            <option value="Basic Hair Installation">Basic Hair Installation - From R150</option>
+            <option value="Hair Installation with Styling">Hair Installation with Styling - From R200</option>
+            <option value="Classic Lashes">Classic Lashes - R100</option>
+            <option value="Hybrid Lashes">Hybrid Lashes - R120</option>
+            <option value="Volume Lashes">Volume Lashes - R140</option>
+            <option value="Lash Infills">Cateye - R160</option>
+            <option value="Cluster Lashes">Cluster Lashes - R150</option>
+            <option value="Short Braids">Short Knotless Braids - From R200</option>
+            <option value="Medium Braids">Medium Knotless Braids - From R250</option>
+            <option value="Long Braids">Long KnotlessBraids - From R300</option>
+            <option value="Short Boho Braids">Short Boho Knotless Braids - R250</option>
+            <option value="Medium Boho Braids">Medium Boho Knotless Braids - R300</option>
+            <option value="Long Boho Braids">Long Boho Knotless Braids - R350</option>
+            <option value="Crochet Afro">Crochet Afro - R150</option>
+        </select><br><br>
+
+        <label>Preferred Date:</label><br>
+        <input type="date" id="date" required><br><br>
+
+        <label>Preferred Time:</label><br>
+        <select id="time" required>
+            <option value="">-- Select a time --</option>
+            <option value="Morning (8am-12pm)">Morning (8am-12pm)</option>
+            <option value="Afternoon (12pm-4pm)">Afternoon (12pm-4pm)</option>
+            <option value="Evening (4pm-8pm)">Evening (4pm-8pm)</option>
+        </select><br><br>
+
+        <label>Special Requests:</label><br>
+        <textarea id="requests" placeholder="Any specific requests? (e.g., length, color, style)"></textarea><br><br>
+
+        <button type="submit" class="book-btn">Submit Booking</button>
+    </form>
+
+    <p>📌 A 30% deposit is required to secure your booking. I'll send payment details upon confirmation.</p>
+
+    <script>
+        function validateBooking() {
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let service = document.getElementById("service").value;
+            let date = document.getElementById("date").value;
+            let time = document.getElementById("time").value;
+
+            if (name === "" || phone === "" || service === "" || date === "" || time === "") {
+                alert("❌ Please fill in all required fields!");
+                return false;
+            } else {
+                alert("✅ Thank you, " + name + "! Your booking request has been sent. I'll confirm within 24 hours! 💖");
+                return true;
+            }
+        }
+    </script>
+
+</body>
+</html>
